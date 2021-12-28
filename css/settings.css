@@ -1,0 +1,40 @@
+.profile-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-img {
+    top: 10%;
+    right: 35%;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn-change {
+    top: 50%;
+    left: 40%
+}
+
+.names {
+    position: absolute;
+    padding: 20%;
+    top: 40%;
+}
+
+.names input {
+    pointer-events: none;
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 10px;
+    margin: 20px;
+}

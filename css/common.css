@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+:root {
+    --blue: #a928ff;
+    /*287bff , a928ff , ff2828 , ffa928,3628ff ,006eff,8400ff,00ccff,ff008c*/
+    --white: #fff;
+    --gray: #f5f5f5;
+    --black1: #222;
+    --black2: #999;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/clock.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="shortcut icon" href="../Assets/icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop-Dashboard</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon" style="margin-top: 40px;"><i class="fas fa-tint"></i></span></span>
+                        <span class="title" style="font-size: 22px; font-weight: bold; margin-top: 40px;">Drop</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./index.html">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Dashboard</span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                        <span class="title">Customer</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon setting"><i style="font-size: 1.7rem;" class="fab fa-buffer"></i></ion-icon></span>
+                        <span class="title">Products</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="remove" class="remove" href="#">
+                        <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
+                        <span class="title">Help desk</span>
+                    </a>
+                </li>
+
+                <!-- <li>
+                    <a onclick="theme()" href="#">
+                        <span class="icon"><i style="font-size: 1.7rem;" class="fab fa-pushed"></i></ion-icon></span>
+                        <span class="title">Theme</span>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <span class="title">Password</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../html/login.html">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="title">Log-out</span>
+                    </a>
+                </li>
+                <li style="bottom: -110%; position: absolute;">
+                    <a href="./setting.html">
+                        <span class="icon setting"><ion-icon name="settings-outline"></ion-icon></span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+            </ul>
+            <div id="theme_select">
+                <div id="1"><button onclick="mode1()"></button></div>
+                <div id="2"><button onclick="mode2()"></button></div>
+                <div id="3"><button onclick="mode3()"></button></div>
+                <div id="4"><button onclick="mode4()"></button></div>
+                <div id="5"><button onclick="mode5()"></button></div>
+                <div id="6"><button onclick="mode6()"></button></div>
+                <div id="7"><button onclick="mode7()"></button></div>
+                <div id="8"><button onclick="mode8()"></button></div>
+                <div id="9"><button onclick="mode9()"></button></div>
+            </div>
+        </div>
+
+        <!-- main -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <!-- search -->
+                <div class="search">
+                    <label for="">
+                        <input type="text" placeholder="search">
+                        <ion-icon name = "search-outline"></ion-icon>
+                    </label>
+                </div>
+                <!-- image -->
+                <div class="user">
+
+                </div>
+            </div>
+
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">24/7</div>
+                        <div class="cardName">Support</div>
+                    </div>
+                    <div class="iconBox">
+                        <ion-icon name="timer-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">Customer</div>
+                        <div class="cardName">Support</div>
+                    </div>
+                    <div class="iconBox">
+                        <ion-icon name="people-circle-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">Instant</div>
+                        <div class="cardName">Chat</div>
+                    </div>
+                    <div class="iconBox">
+                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">Help</div>
+                        <div class="cardName">Desk</div>
+                    </div>
+                    <div class="iconBox">
+                        <ion-icon name="help-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- details -->
+            <div class="details" id="details">
+                <div class="recent">
+                    <div class="cardHeader">
+                        <h2>Call Desk</h2>
+                        <a href="#" class="btn">view All</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <td>S.No</td>
+                            <td>Name</td>
+                            <td>Number</td>
+                            <td>Location</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Ajith</td>
+                                <td>(+91) 9970869578</td>
+                                <td><span>Kolkata, India</span> </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Starck</td>
+                                <td>(+91) 7904906675</td>
+                                <td><span>Mumbai, India</span> </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Emma</td>
+                                <td>(+91) 8870808318</td>
+                                <td><span>Chennai, India</span> </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Zendaya</td>
+                                <td>(+91) 8754194875</td>
+                                <td><span>Kerala, India</span> </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Jonny</td>
+                                <td>(+91) 1452358764</td>
+                                <td><span>Hydrabad, India</span> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="recentCus" id="chatContainer">
+                    <div class="cardHeader">
+                        <h2>Chat with Experts</h2>
+                    </div>
+                    <table>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBox"><img src="../Assets/ajith.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>Ajith <br><span>online</span></h4>
+                            </td>
+                            <td>
+                                <ion-icon name="chatbubbles-outline"></ion-icon>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBox"><img src="../Assets/stark.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>Starck <br><span>online</span></h4>
+                            </td>
+                            <td id="stark">
+                                <ion-icon onclick="starck()" name="chatbubbles-outline"></ion-icon>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBox"><img src="../Assets/emma.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>Emma <br><span>offline</span></h4>
+                            </td>
+                            <td>
+                                <ion-icon name="chatbubbles-outline"></ion-icon>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBox"><img src="../Assets/Zendaya.webp" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>Zendaya <br><span>online</span></h4>
+                            </td>
+                            <td>
+                                <ion-icon name="chatbubbles-outline"></ion-icon>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBox"><img src="../Assets/jonny.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>Jonny <br><span>offline</span></h4>
+                            </td>
+                            <td>
+                                <ion-icon name="chatbubbles-outline"></ion-icon>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBox"><img src="../Assets/danni.jpg" alt=""></div>
+                            </td>
+                            <td>
+                                <h4>Danni <br><span>offline</span></h4>
+                            </td>
+                            <td>
+                                <ion-icon name="chatbubbles-outline"></ion-icon>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="clock-container">
+            <div class="clock" id="Digitalclock" onload="showTime()"></div>
+        </div>
+
+
+    </div>
+    <script src="../js/clock.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+
+</html>
