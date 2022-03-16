@@ -297,3 +297,13 @@ function send() {
     myDiv.scrollTop = myDiv.scrollHeight;
 
 }
+
+
+
+
+connection.query(`create table ${new_user}(id int not null primary key AUTO_INCREMENT,user_name varchar(255),user_pass varchar(255),user_email varchar(255),user_profile longtext)`);
+connection.query(`insert into ${new_user}(user_name,user_email,user_pass,user_profile) values(?,?,?,?)`, [new_user, new_email, new_password, image], function(err) {
+    if (err) throw err;
+    else { res.redirect("/dashboard") }
+    res.end();
+})
